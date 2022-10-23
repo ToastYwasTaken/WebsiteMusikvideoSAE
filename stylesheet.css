@@ -1,11 +1,62 @@
 /*Style sheet to adjust website appearance */
-/*Define body style */
+/*general body style */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.6em;
+}
+/*container style*/
+.container{
+    width:80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+/*h1 header style */
+#header{
+    font-size: 40px;
     line-height: 1.2em;
 }
-/*Define h1 header style */
-h1{
-
+/*Navigation Slider*/
+#slider {
+    background: #aaa;
+    color: black;
+    font-size: 22px;
+    position: sticky;
+    position:-webkit-sticky;
+    top: 0;
+    border: 3px solid black;
+}
+#slider ul{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+#slider li{
+    align-content: flex-end;
+    display: inline;
+    padding: 5px 10px;
+}
+#slider a{
+    text-decoration: none;
+    color: black;
+}
+#slider li:hover {
+    background: grey;
+    font-weight: bolder;
+}
+/*Placeholder*/
+#placeHolderContainerContent{
+    line-height: normal;
+    font-size: 800px;
+    padding: 10px 20px;
+    border: 5px solid black;
+    margin: auto;
+    overflow: hidden;
+}
+/*Footer*/
+#footer{
+    background: #aaa;
+    font-size: 12px;
 }

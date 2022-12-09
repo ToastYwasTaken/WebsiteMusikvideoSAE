@@ -1,4 +1,12 @@
 
+/*Shortcuts for using colors*/
+:root{
+    --headercolor : #db5c36;
+    --buttoncolor : #e79177;
+    --backgroundcolor : #fafdf3;
+    --textcolor : black;
+}
+
 *{ font-family: 'Quicksand';
 }
 

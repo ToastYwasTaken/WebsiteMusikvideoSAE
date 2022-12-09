@@ -1,3 +1,7 @@
+
+*{ font-family: 'Quicksand';
+}
+
 .navbar{
     transition: all 0.2s;
 }

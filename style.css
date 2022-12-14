@@ -14,12 +14,16 @@
     transition: all 0.2s;
 }
 
+/*TODO: doesnt change color properly sh*/
+.nav-item{
+    color:var(--buttoncolor);
+}
+
 .navbar-scrolled {
     background-color: black;
     box-shadow: 0 3px 10px rgba(0,  0,  0,  0.15);
 
 }
-
 .carousel-item {
     height: 65vh;
     min-height: 350px;
@@ -29,4 +33,10 @@
     -o-background-size: cover;
     background-size: cover;
   }
+
+  #navbarHeader{
+    color: var(--headercolor);
+    font-weight: bold;
+}
+
 

@@ -2,11 +2,14 @@
 /*Shortcuts for using colors*/
 :root{
     --headercolor : #db5c36;
-    --buttoncolor : #e79177;
-    --backgroundcolor : #fafdf3;
-    --textcolor : black;
+    --linkcolor : #e79177;
+    --linkHovercolor: #e96a44;
+    --backgroundcolor : #d8d8d8;
+    --textcolorBlack : black;
+    --textcolorWhite : white;
 }
 
+/*Defines font family for entire site*/
 *{ font-family: 'Quicksand';
 }
 
@@ -14,16 +17,13 @@
     transition: all 0.2s;
 }
 
-/*TODO: doesnt change color properly sh*/
-.nav-item{
-    color:var(--buttoncolor);
-}
-
+/*navbar style when scroling down*/
 .navbar-scrolled {
     background-color: black;
     box-shadow: 0 3px 10px rgba(0,  0,  0,  0.15);
 
 }
+
 .carousel-item {
     height: 65vh;
     min-height: 350px;
@@ -34,9 +34,36 @@
     background-size: cover;
   }
 
+/*Text color of navbar main text*/
   #navbarHeader{
     color: var(--headercolor);
     font-weight: bold;
 }
+
+/*nav-link general*/
+.navbar-custom .navbar-nav .nav-link{
+    color:var(--linkcolor);
+}
+
+/*nav-links active*/
+.navbar-custom .nav-item .nav-link.active{
+    color:var(--linkcolor);
+    font-weight: bold;
+}
+
+/*nav-links hover*/
+.navbar-custom .nav-item:hover .nav-link{
+    color:var(--linkHovercolor);
+}
+/*footer company name*/
+.bg-dark.py-5.mt-5 .container.text-light.text-center .display-10.mb-3{
+  color: var(--headercolor); 
+  font-weight: bold; 
+}
+/*
+.nav-item.active{
+    font-weight: bold;
+}*/
+
 
 

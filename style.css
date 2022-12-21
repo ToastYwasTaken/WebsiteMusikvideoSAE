@@ -1,4 +1,5 @@
 
+/*GENERAL*/
 /*Shortcuts for using colors*/
 :root{
     --headercolor : #db5c36;
@@ -7,11 +8,19 @@
     --backgroundcolor : #d8d8d8;
     --textcolorBlack : black;
     --textcolorWhite : white;
+    --fontWeightRegular: 400;
+    --fontWeightMedium: 500;
+    --fontWeightSemiBold: 600;
+    --fontWeightBold: 700;
 }
 
 /*Defines font family for entire site*/
-*{ font-family: 'Quicksand';
+@font-face {
+    font-family: 'QuickSand';
+    src: url(https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap);
 }
+
+/*HEADER*/
 
 .navbar{
     transition: all 0.2s;
@@ -34,10 +43,16 @@
     background-size: cover;
   }
 
+  .carousel-caption{
+    font-weight: var(--fontWeightSemiBold);
+    font-size:x-large;
+    color:var(--headercolor);
+  }
+
 /*Text color of navbar main text*/
   #navbarHeader{
     color: var(--headercolor);
-    font-weight: bold;
+    font-weight: var(--fontWeightBold);
 }
 
 /*nav-link general*/
@@ -48,22 +63,25 @@
 /*nav-links active*/
 .navbar-custom .nav-item .nav-link.active{
     color:var(--linkcolor);
-    font-weight: bold;
+    font-weight: var(--fontWeightMedium);
 }
 
 /*nav-links hover*/
 .navbar-custom .nav-item:hover .nav-link{
     color:var(--linkHovercolor);
 }
-/*footer company name*/
-.bg-dark.py-5.mt-5 .container.text-light.text-center .display-10.mb-3{
-  color: var(--headercolor); 
-  font-weight: bold; 
-}
-/*
-.nav-item.active{
-    font-weight: bold;
-}*/
+
+/*BODY*/
+
+
+
+/*FOOTER*/
+/*IG text*/
+.bg-dark.py-5 .container.text-light.text-center .mb-3.p-2.instaText{
+    color: #ac2bac; 
+    font-weight: var(--fontWeightBold); 
+  }
+
 
 
 

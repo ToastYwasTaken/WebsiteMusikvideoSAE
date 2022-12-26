@@ -20,8 +20,7 @@
     src: url(https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap);
 }
 
-
-/*HEADER*/
+/*NAVBAR*/
 
 .navbar{
     transition: all 3.0s;
@@ -33,22 +32,6 @@
     box-shadow: 0 3px 10px rgba(0,  0,  0,  0.15);
 
 }
-
-.carousel-item {
-    height: 65vh;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
-  .carousel-caption{
-    font-weight: var(--fontWeightSemiBold);
-    font-size:x-large;
-    color:var(--headercolor);
-  }
 
 /*Text color of navbar main text*/
   #navbarHeader{
@@ -67,10 +50,43 @@
     font-weight: var(--fontWeightMedium);
 }
 
-/*nav-links hover*/
+/*nav-links hover inactive*/
 .navbar-custom .nav-item:hover .nav-link{
     color:var(--linkHovercolor);
+    font-weight: var(--fontWeightMedium);
 }
+
+/*nav-links hover active*/
+.navbar-custom .nav-item:hover .nav-link.active{
+    color:var(--linkHovercolor);
+    font-weight: var(--fontWeightBold);
+}
+
+/*HEADER*/
+
+/*header color*/
+.py-5 .row .col-lg-6 .heading{
+  color:var(--headercolor);
+  font-weight: var(--fontWeightBold);
+}
+
+/*carousel styling*/
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .carousel-caption{
+    font-weight: var(--fontWeightSemiBold);
+    font-size:x-large;
+    color:var(--headercolor);
+  }
+
 
 /*BODY*/
 
@@ -82,9 +98,6 @@
     user-select: none;
   }
 
-.bd-placeholder-img .card-body .card-text{
-  color:var(--headercolor)
-}
 
 /*FOOTER*/
 /*IG text*/
@@ -94,6 +107,7 @@
   }
 
 
+/*Changes font size on window resize*/
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
       font-size: 3.5rem;
@@ -101,8 +115,8 @@
 }
 
 /*TODO: possibly remove, only an issue if background is white*/
-@media screen and (max-width:1000px){
-  .navBarToggler{
+@media (max-width:1000px){
+  .navbar-toggler{
     background-color: black;
     box-shadow: 0 3px 10px rgba(0,  0,  0,  0.15);
   }

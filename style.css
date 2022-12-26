@@ -19,10 +19,7 @@
     font-family: 'QuickSand';
     src: url(https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap);
 }
-/*TODO:Also make navbar black if screen is too small so it's still visible*/
-@media screen and (max-width:600px){
-    
-}
+
 
 /*HEADER*/
 
@@ -85,11 +82,9 @@
     user-select: none;
   }
 
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-  }
+.bd-placeholder-img .card-body .card-text{
+  color:var(--headercolor)
+}
 
 /*FOOTER*/
 /*IG text*/
@@ -99,5 +94,18 @@
   }
 
 
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+  }
+}
+
+/*TODO: possibly remove, only an issue if background is white*/
+@media screen and (max-width:1000px){
+  .navBarToggler{
+    background-color: black;
+    box-shadow: 0 3px 10px rgba(0,  0,  0,  0.15);
+  }
+}
 
 

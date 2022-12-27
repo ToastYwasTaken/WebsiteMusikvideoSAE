@@ -71,10 +71,30 @@
 
 /*HEADER*/
 
+/*background-image*/
+.header-background-image{
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header .header-background-image .header-div{
+} 
+
 /*header color*/
-.py-5 .row .col-lg-6 .heading{
+header .header-background-image .header-div .heading{
   color:var(--headercolor);
   font-weight: var(--fontWeightBold);
+}
+
+/*lead color*/
+header .header-background-image .header-div .lead{
+  color:var(--textcolorWhite);
+  font-weight: var(--fontWeightSemiBold);
 }
 
 /*carousel styling*/
@@ -107,16 +127,15 @@
 
 /*ul*/
 .py-5.bg-dark .container ul.offer-list {
-
+  background-color: var(--backgroundcolor);
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /*li*/
 .py-5.bg-dark .container ul.offer-list li.lead{
-
+  list-style-type:disc;
 }
-
-
-
 
 /*FOOTER*/
 /*IG text*/

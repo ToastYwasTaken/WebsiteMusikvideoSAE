@@ -4,7 +4,8 @@
 :root{
     --headercolor : #db5c36;
     --linkcolor : #e79177;
-    --linkHovercolor: #e96a44;
+    --linkcolorHover: #e96a44;
+    --linkcolorVisited : #e7a077;
     --backgroundcolor : #d8d8d8;
     --textcolorBlack : black;
     --textcolorWhite : white;
@@ -50,15 +51,21 @@
     font-weight: var(--fontWeightMedium);
 }
 
+/*nav-links visited*/
+.navbar-custom .nav-item .nav-link:visited{
+  color:var(--linkcolorVisited);
+  font-weight: var(--fontWeightMedium);
+}
+
 /*nav-links hover inactive*/
 .navbar-custom .nav-item:hover .nav-link{
-    color:var(--linkHovercolor);
+    color:var(--linkcolorHover);
     font-weight: var(--fontWeightMedium);
 }
 
 /*nav-links hover active*/
 .navbar-custom .nav-item:hover .nav-link.active{
-    color:var(--linkHovercolor);
+    color:var(--linkcolorHover);
     font-weight: var(--fontWeightBold);
 }
 
@@ -97,6 +104,18 @@
     -moz-user-select: none;
     user-select: none;
   }
+
+/*ul*/
+.py-5.bg-dark .container ul.offer-list {
+
+}
+
+/*li*/
+.py-5.bg-dark .container ul.offer-list li.lead{
+
+}
+
+
 
 
 /*FOOTER*/

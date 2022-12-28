@@ -6,7 +6,8 @@
     --linkcolor : #e79177;
     --linkcolorHover: #e96a44;
     --linkcolorVisited : #e7a077;
-    --backgroundcolor : #d8d8d8;
+    --backgroundcolorLight : #d8d8d8;
+    --backgroundcolorDark : #7372726d;
     --textcolorBlack : black;
     --textcolorWhite : white;
     --fontWeightRegular: 400;
@@ -14,6 +15,8 @@
     --fontWeightSemiBold: 600;
     --fontWeightBold: 700;
 }
+
+/*Global settings*/
 
 /*Defines font family for entire site*/
 @font-face {
@@ -71,28 +74,21 @@
 
 /*HEADER*/
 
-/*background-image*/
-.header-background-image{
-  height: 65vh;
+/*background color*/
+.py-5.text-center.container{
+  height: 60vh; 
   min-height: 350px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: var(--backgroundcolorDark);
 }
 
-header .header-background-image .header-div{
-} 
-
 /*header color*/
-header .header-background-image .header-div .heading{
+.py-5.text-center.container .row.py-lg-5 .col-lg-6.col-md-8.mx-auto.my-4 .heading{
   color:var(--headercolor);
   font-weight: var(--fontWeightBold);
 }
 
 /*lead color*/
-header .header-background-image .header-div .lead{
+.py-5.text-center.container .row.py-lg-5 .col-lg-6.col-md-8.mx-auto.my-4 .lead{
   color:var(--textcolorWhite);
   font-weight: var(--fontWeightSemiBold);
 }
@@ -117,25 +113,46 @@ header .header-background-image .header-div .lead{
 
 /*BODY*/
 
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
+/*container experience*/
+.py-5.bg-dark .container.container-experience{
+  height: 100vh;
+  min-height: 350px;
+
+}
+
+/*container excellence*/
+.py-5.bg-dark .container.container-excellence{
+  height: 100vh;
+  min-height: 350px;
+
+}
+
+/*container offer*/
+.py-5.bg-dark .container.container-offer{
+  height: 100vh;
+  min-height: 350px;
+
+}
 
 /*ul*/
 .py-5.bg-dark .container ul.offer-list {
-  background-color: var(--backgroundcolor);
-  margin-top: 50px;
-  margin-bottom: 50px;
+  background-color: var(--backgroundcolorLight);
 }
 
 /*li*/
 .py-5.bg-dark .container ul.offer-list li.lead{
   list-style-type:disc;
 }
+
+/*images in photo album*/
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
 
 /*FOOTER*/
 /*IG text*/
@@ -144,7 +161,7 @@ header .header-background-image .header-div .lead{
     font-weight: var(--fontWeightBold); 
   }
 
-
+/*Media settings*/
 /*Changes font size on window resize*/
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {

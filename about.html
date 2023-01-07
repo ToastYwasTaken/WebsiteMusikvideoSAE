@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
@@ -15,8 +16,9 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <!--JS ref-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script> 
-    </head>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
         <div class="container-fluid">
           <a class="navbar-brand" href="/index.html" id="navbarHeader">
             <img src="SAEngineersLogoWhiteScale.ico" width="40" height="40" class="d-inline-block align-text-left">
@@ -42,202 +44,604 @@
             </ul>
           </div>
         </div>
-    </nav>
-    
-    <header>
-      <section class="py-5 text-center container">
-        <div class="row py-lg-5">
-          <div class="col-lg-6 col-md-8 mx-auto  my-4">
-            <h1 class="heading">our team</h1>
-            <p class="lead">below you can see our team consisting of highly ambitious people</p>
-            <p>
-              <a href="#" class="btn btn-primary my-2">Main call to action</a>
-              <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-            </p>
-          </div>
+</nav>
+
+<body>
+
+  <!-- Breadcumb Area Start -->
+  <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(breadcumb-about-us.jpg);">
+    <div class="bradcumbContent">
+        <p>Bestehend aus ambitionierenden Menschen</p>
+        <h2>Unser Team</h2>
+    </div>
+  </section>
+        
+  <!-- Team Cards Area Start -->
+  <section class="events-area section-padding-100">
+    <div class="container">
+      <div class="row">
+
+        <!-- Emily Steckbrief -->
+        <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-event-area mb-30">
+                    <div class="event-thumbnail">
+                        <img src="Teamfotos.png" alt="">
+                    </div>
+                    <div class="event-text">
+                        <h4>Emily Adams</h4>
+                        <div class="event-meta-data">
+                            <a href="#" class="event-place">Marketing & Social Media</a>
+                            <a href="#" class="event-date">Game Art</a>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#emilySteckbrief">
+                          STECKBRIEF
+                        </button>
+                    </div>
+                </div>
         </div>
-      </section>
-      </header>
-    <!--page content-->
-      <body>
-        <div class="album py-5 bg-light">
-          <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              <div class="col">
-                <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-      
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
+        <div class="modal fade" id="emilySteckbrief" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 style="color:#db5c36">Emily Adams</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Fachbereich: Game Art <br>
+                    <br>
+                    Geburtsdatum: Antwort <br>
+                    <br>
+                    Was gefällt dir am meisten an der Zusammenarbeit im Team? <br>
+                    Antwort <br>
+                    <br>
+                    Für was bist du zuständig? <br>
+                    Antwort <br>
+                    <br>
+                    Was ist deine Lieblingstätigkeit in deinem Fachbereich? <br>
+                    Antwort <br>
+                    <br>
+                    Gib' uns noch eine Weisheit mit: <br>
+                    Antwort <br>
+                    <br>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-      
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+        </div>
+
+        <!-- Tugce Steckbrief -->
+        <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-event-area mb-30">
+                      <div class="event-thumbnail">
+                          <img src="Teamfotos.png" alt="">
                       </div>
-                      <small class="text-muted">9 mins</small>
+                      <div class="event-text">
+                          <h4>Tugce Celik</h4>
+                          <div class="event-meta-data">
+                              <a href="#" class="event-place">Marketing & Website</a>
+                              <a href="#" class="event-date">Games Prog</a>
+                          </div>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            STECKBRIEF
+                          </button>
+                      </div>
+                  </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 style="color:#db5c36">Tugce Celik</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    <div class="modal-body">
+                      Fachbereich: Games Programming <br>
+                      <br>
+                      Geburtsdatum: 11.07.2001 <br>
+                      <br>
+                      Was gefällt dir am meisten an der Zusammenarbeit im Team? <br>
+                      Antwort <br>
+                      <br>
+                      Für was bist du zuständig? <br>
+                      Antwort <br>
+                      <br>
+                      Was ist deine Lieblingstätigkeit in deinem Fachbereich? <br>
+                      Antwort <br>
+                      <br>
+                      Gib' uns noch eine Weisheit mit: <br>
+                      Antwort <br>
+                      <br>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+        <!-- Leonard Steckbrief -->
+        <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-event-area mb-30">
+                    <div class="event-thumbnail">
+                        <img src="Teamfotos.png" alt="">
+                    </div>
+                    <div class="event-text">
+                        <h4>Leonard Ferreyra</h4>
+                        <div class="event-meta-data">
+                            <a href="#" class="event-place">Musiker</a>
+                            <a href="#" class="event-date">Audio</a>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#leonardSteckbrief">
+                          STECKBRIEF
+                        </button>
+                    </div>
+                </div>
+        </div>
+        <div class="modal fade" id="leonardSteckbrief" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 style="color:#db5c36">Leonard Ferreyra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Fachbereich: Antwort <br>
+                    <br>
+                    Geburtsdatum: Antwort <br>
+                    <br>
+                    Was gefällt dir am meisten an der Zusammenarbeit im Team? <br>
+                    Antwort <br>
+                    <br>
+                    Für was bist du zuständig? <br>
+                    Antwort <br>
+                    <br>
+                    Was ist deine Lieblingstätigkeit in deinem Fachbereich? <br>
+                    Antwort <br>
+                    <br>
+                    Gib' uns noch eine Weisheit mit: <br>
+                    Antwort <br>
+                    <br>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-      
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
+        </div>
+
+        <!-- Lukas Steckbrief -->
+        <div class="col-12 col-md-6 col-lg-4 section-padding-100">
+              <div class="single-event-area mb-30">
+                  <div class="event-thumbnail">
+                      <img src="Teamfotos.png" alt="">
                   </div>
+                  <div class="event-text">
+                      <h4>Lukas Hosie Uribe</h4>
+                      <div class="event-meta-data">
+                          <a href="#" class="event-place">Film</a>
+                          <a href="#" class="event-date">Drehbuch usw</a>
+                      </div>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lukasSteckbrief">
+                        STECKBRIEF
+                      </button>
+                  </div>
+              </div>
+        </div>
+        <div class="modal fade" id="lukasSteckbrief" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 style="color:#db5c36">Lukas Hosie Uribe</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Fachbereich: Antwort <br>
+                  <br>
+                  Geburtsdatum: Antwort <br>
+                  <br>
+                  Was gefällt dir am meisten an der Zusammenarbeit im Team? <br>
+                  Antwort <br>
+                  <br>
+                  Für was bist du zuständig? <br>
+                  Antwort <br>
+                  <br>
+                  Was ist deine Lieblingstätigkeit in deinem Fachbereich? <br>
+                  Antwort <br>
+                  <br>
+                  Gib' uns noch eine Weisheit mit: <br>
+                  Antwort <br>
+                  <br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
                 </div>
               </div>
-      
-              <div class="col">
-                <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-      
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
-                  </div>
+            </div>
+        </div>
+
+        <!-- Tina Steckbrief -->
+        <div class="col-12 col-md-6 col-lg-4 section-padding-100">
+            <div class="single-event-area mb-30">
+                <div class="event-thumbnail">
+                    <img src="Teamfotos.png" alt="">
                 </div>
+                <div class="event-text">
+                    <h4>Tina Kollmann</h4>
+                    <div class="event-meta-data">
+                        <a href="#" class="event-place">Stylistin</a>
+                        <a href="#" class="event-date">VFX</a>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tinaSteckbrief">
+                      STECKBRIEF
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="tinaSteckbrief" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 style="color:#db5c36">Tina Kollmann</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="col">
-                <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-      
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
-                  </div>
-                </div>
+              <div class="modal-body">
+                Fachbereich: Antwort <br>
+                <br>
+                Geburtsdatum: Antwort <br>
+                <br>
+                Was gefällt dir am meisten an der Zusammenarbeit im Team? <br>
+                Antwort <br>
+                <br>
+                Für was bist du zuständig? <br>
+                Antwort <br>
+                <br>
+                Was ist deine Lieblingstätigkeit in deinem Fachbereich? <br>
+                Antwort <br>
+                <br>
+                Gib' uns noch eine Weisheit mit: <br>
+                Antwort <br>
+                <br>
               </div>
-              <div class="col">
-                <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-      
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-      
-              <div class="col">
-                <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-      
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-      
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-      
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
-                  </div>
-                </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Daniel Steckbrief -->
+        <div class="col-12 col-md-6 col-lg-4 section-padding-100">
+          <div class="single-event-area mb-30">
+              <div class="event-thumbnail">
+                  <img src="Teamfotos.png" alt="">
+              </div>
+              <div class="event-text">
+                  <h4>Daniel Krüger</h4>
+                  <div class="event-meta-data">
+                      <a href="#" class="event-place">Filmer</a>
+                      <a href="#" class="event-date">Film</a>
+                  </div>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#danielSteckbrief">
+                    STECKBRIEF
+                  </button>
+              </div>
+          </div>
+        </div>
+        <div class="modal fade" id="danielSteckbrief" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 style="color:#db5c36">Daniel Krüger</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Fachbereich: Antwort <br>
+              <br>
+              Geburtsdatum: Antwort <br>
+              <br>
+              Was gefällt dir am meisten an der Zusammenarbeit im Team? <br>
+              Antwort <br>
+              <br>
+              Für was bist du zuständig? <br>
+              Antwort <br>
+              <br>
+              Was ist deine Lieblingstätigkeit in deinem Fachbereich? <br>
+              Antwort <br>
+              <br>
+              Gib' uns noch eine Weisheit mit: <br>
+              Antwort <br>
+              <br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- Sebastian Steckbrief -->
+        <div class="col-12 col-md-6 col-lg-4">
+        <div class="single-event-area mb-30">
+            <div class="event-thumbnail">
+                <img src="Teamfotos.png" alt="">
+            </div>
+            <div class="event-text">
+                <h4>Sebastian Maier</h4>
+                <div class="event-meta-data">
+                    <a href="#" class="event-place">keine Ahnung</a>
+                    <a href="#" class="event-date">keine Ahnung</a>
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sebastianSteckbrief">
+                  STECKBRIEF
+                </button>
+            </div>
+        </div>
+        </div>
+        <div class="modal fade" id="sebastianSteckbrief" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 style="color:#db5c36">Sebastian Maier</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Fachbereich: Antwort <br>
+            <br>
+            Geburtsdatum: Antwort <br>
+            <br>
+            Was gefällt dir am meisten an der Zusammenarbeit im Team? <br>
+            Antwort <br>
+            <br>
+            Für was bist du zuständig? <br>
+            Antwort <br>
+            <br>
+            Was ist deine Lieblingstätigkeit in deinem Fachbereich? <br>
+            Antwort <br>
+            <br>
+            Gib' uns noch eine Weisheit mit: <br>
+            Antwort <br>
+            <br>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+          </div>
+        </div>
+      </div>
+        </div>
+
+        <!-- Franz Steckbrief -->
+        <div class="col-12 col-md-6 col-lg-4">
+      <div class="single-event-area mb-30">
+          <div class="event-thumbnail">
+              <img src="Teamfotos.png" alt="">
+          </div>
+          <div class="event-text">
+              <h4>Franz Mörike</h4>
+              <div class="event-meta-data">
+                  <a href="#" class="event-place">Marketing & Website</a>
+                  <a href="#" class="event-date">Games Prog</a>
+              </div>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#franzSteckbrief">
+                STECKBRIEF
+              </button>
+          </div>
+      </div>
+        </div>
+        <div class="modal fade" id="franzSteckbrief" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 style="color:#db5c36">Franz Mörike</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Fachbereich: Antwort <br>
+          <br>
+          Geburtsdatum: Antwort <br>
+          <br>
+          Was gefällt dir am meisten an der Zusammenarbeit im Team? <br>
+          Antwort <br>
+          <br>
+          Für was bist du zuständig? <br>
+          Antwort <br>
+          <br>
+          Was ist deine Lieblingstätigkeit in deinem Fachbereich? <br>
+          Antwort <br>
+          <br>
+          Gib' uns noch eine Weisheit mit: <br>
+          Antwort <br>
+          <br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+        </div>
+  
+        <!-- Hristina Steckbrief -->
+        <div class="col-12 col-md-6 col-lg-4">
+    <div class="single-event-area mb-30">
+        <div class="event-thumbnail">
+            <img src="Teamfotos.png" alt="">
+        </div>
+        <div class="event-text">
+            <h4>Hristina Nisheva</h4>
+            <div class="event-meta-data">
+                <a href="#" class="event-place">Musikerin</a>
+                <a href="#" class="event-date">Audio Dep</a>
+            </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hristinaSteckbrief">
+              STECKBRIEF
+            </button>
+        </div>
+    </div>
+        </div>
+        <div class="modal fade" id="hristinaSteckbrief" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 style="color:#db5c36">Hristina Nisheva</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Fachbereich: Antwort <br>
+        <br>
+        Geburtsdatum: Antwort <br>
+        <br>
+        Was gefällt dir am meisten an der Zusammenarbeit im Team? <br>
+        Antwort <br>
+        <br>
+        Für was bist du zuständig? <br>
+        Antwort <br>
+        <br>
+        Was ist deine Lieblingstätigkeit in deinem Fachbereich? <br>
+        Antwort <br>
+        <br>
+        Gib' uns noch eine Weisheit mit: <br>
+        Antwort <br>
+        <br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+      </div>
+    </div>
+  </div>
+        </div>
+              
+        <!-- Albert Steckbrief -->
+        <div class="col-12 col-md-6 col-lg-4 section-padding-100" style="margin-left: 220px;" >
+                <div class="single-event-area mb-30">
+                    <div class="event-thumbnail">
+                        <img src="Teamfotos.png" alt="">
+                    </div>
+                    <div class="event-text">
+                        <h4>Albert Max Still</h4>
+                        <div class="event-meta-data">
+                            <a href="#" class="event-place">Produzent</a>
+                            <a href="#" class="event-date">Film Dep</a>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#albertSteckbrief">
+                          STECKBRIEF
+                        </button>
+                    </div>
+                </div>
+        </div>
+        <div class="modal fade" id="albertSteckbrief" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 style="color:#db5c36">Albert Max Still</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Fachbereich: Antwort <br>
+                    <br>
+                    Geburtsdatum: Antwort <br>
+                    <br>
+                    Was gefällt dir am meisten an der Zusammenarbeit im Team? <br>
+                    Antwort <br>
+                    <br>
+                    Für was bist du zuständig? <br>
+                    Antwort <br>
+                    <br>
+                    Was ist deine Lieblingstätigkeit in deinem Fachbereich? <br>
+                    Antwort <br>
+                    <br>
+                    Gib' uns noch eine Weisheit mit: <br>
+                    Antwort <br>
+                    <br>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- Lando Steckbrief -->
+        <div class="col-12 col-md-6 col-lg-4 section-padding-100" >
+              <div class="single-event-area mb-30">
+                  <div class="event-thumbnail">
+                      <img src="Teamfotos.png" alt="">
+                  </div>
+                  <div class="event-text">
+                      <h4>Lando Wagner</h4>
+                      <div class="event-meta-data">
+                          <a href="#" class="event-place">Production</a>
+                          <a href="#" class="event-date">Audi Dep</a>
+                      </div>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#landoSteckbrief">
+                        STECKBRIEF
+                      </button>
+                  </div>
+              </div>
+        </div>
+        <div class="modal fade" id="landoSteckbrief" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 style="color:#db5c36">Lando Wagner</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Fachbereich: Antwort <br>
+                  <br>
+                  Geburtsdatum: Antwort <br>
+                  <br>
+                  Was gefällt dir am meisten an der Zusammenarbeit im Team? <br>
+                  Antwort <br>
+                  <br>
+                  Für was bist du zuständig? <br>
+                  Antwort <br>
+                  <br>
+                  Was ist deine Lieblingstätigkeit in deinem Fachbereich? <br>
+                  Antwort <br>
+                  <br>
+                  Gib' uns noch eine Weisheit mit: <br>
+                  Antwort <br>
+                  <br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
     
-    <!-- Navbar Animation Adding Scroll-->
-        <script>
-            const navEl = document.querySelector('.navbar');
+  <!-- Navbar Animation Adding Scroll-->
+    <script>
+      const navEl = document.querySelector('.navbar');
     
-            window.addEventListener('scroll', () =>{
-                if(window.scrollY >= 56){
-                    navEl.classList.add('navbar-scrolled');
-                } else if (window.scrollY < 56){
-                    navEl.classList.remove('navbar-scrolled');
-                }
-            });
-        </script>
-      </body>
+      window.addEventListener('scroll', () =>{
+        if(window.scrollY >= 56){
+          navEl.classList.add('navbar-scrolled');
+          } 
+        else if (window.scrollY < 56){
+          navEl.classList.remove('navbar-scrolled');
+          }
+        });
+    </script>
+</body>
     
-  <!-- Footer -->
-  <footer class="bg-dark py-5 mt-5">
-    <div class="container text-light text-center">
-      <div class="d-flex justify-content-center">
+<!-- Footer -->
+<footer class="bg-dark py-5 mt-5">
+  <div class="container text-light text-center">
+    <div class="d-flex justify-content-center">
       <a class=" mb-3 btn text-white btn-floating p-2" style ="background-color: #ac2bac;" href="https://www.instagram.com/superawesomeengineers/" target="_blank" role="button">
         <i class="bi bi-instagram"></i>
       </a>
       <p class="mb-3 p-2 instaText">Follow us on Instagram </p>
     </div>
     <small class="text-white-50">&copy; Copyright by Super Awesome Engineers. All rights reserved.</small>
-    </div>
+  </div>
 </footer>
 
 </html>

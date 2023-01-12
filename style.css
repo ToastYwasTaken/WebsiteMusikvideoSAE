@@ -95,7 +95,7 @@
 
 /*carousel styling*/
 .carousel-item {
-    height: 90vh;
+    height: 80vh;
     min-height: 350px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -232,11 +232,6 @@
 }
 /*#endregion FadeIn function*/
 
-/*li*/
-.py-5.bg-dark .container ul.offer-list li.lead{
-  list-style-type:disc;
-}
-
 /*images in photo album*/
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -264,13 +259,7 @@
   }
 }
 
-/*TODO: possibly remove, only an issue if background is white*/
-@media (max-width:1000px){
-  .navbar-toggler{
-    background-color: black;
-    box-shadow: 0 3px 10px rgba(0,  0,  0,  0.15);
-  }
-}
+
 /*#endregion MEDIA*/
 
 /* :: 7.0 Events Area CSS */
@@ -590,6 +579,16 @@
 .img-kidos{
   border-radius: 3px; 
   margin-left: 100px; 
+  margin-bottom:20px;
   box-shadow: black;
+  /*adjusting aspect ratio*/
+  height: 30vh;
+  width: 45vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 

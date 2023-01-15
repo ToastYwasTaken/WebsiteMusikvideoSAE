@@ -75,8 +75,8 @@
 
 /*#region HEADER*/
 /*background color*/
-.py-5.text-center.container{
-  height: 60vh; 
+.header{
+  height: 80vh; 
   min-height: 350px;
   background-color: var(--backgroundcolorDark);
 }
@@ -240,6 +240,13 @@
   -moz-user-select: none;
   user-select: none;
 }
+
+/*sizing of album card pictures*/
+.album.py-5.bg-light .row.row-cols-1.row-cols-sm-2.row-cols-md-3.g-3 .col .card.shadow-sm .bd-placeholder-img.card-img-top .artist-image{
+  width: 102%;
+  height: 102%;
+}
+
 /*#endregion BODY*/
 
 /*#region FOOTER*/
@@ -583,7 +590,7 @@
   box-shadow: black;
   /*adjusting aspect ratio*/
   height: 30vh;
-  width: 45vh;
+  width: 52vh;
   min-height: 350px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;

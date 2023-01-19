@@ -74,9 +74,16 @@
 /*#endregion NAVBAR*/
 
 /*#region HEADER*/
-/*background color*/
-.header{
+
+#carousel-index{
   height: 80vh; 
+  min-height: 350px;
+  background-color: var(--backgroundcolorDark);
+}
+
+.header{
+  padding-top: 5vh;
+  height: 40vh; 
   min-height: 350px;
   background-color: var(--backgroundcolorDark);
 }
@@ -357,6 +364,7 @@
   position: relative;
   z-index: 1;
   margin-bottom: 100px;
+  margin-left: 100px;
   text-align: center;
   color:#db5c36; }
   .section-heading p {

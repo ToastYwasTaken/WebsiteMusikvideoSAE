@@ -75,12 +75,6 @@
 
 /*#region HEADER*/
 
-#carousel-index{
-  height: 80vh; 
-  min-height: 350px;
-  background-color: var(--backgroundcolorDark);
-}
-
 .header{
   padding-top: 5vh;
   height: 40vh; 
@@ -88,8 +82,15 @@
   background-color: var(--backgroundcolorDark);
 }
 
+.header-iquit {
+  padding-top: 5vh;
+  height: 10vh; 
+  min-height: 200px;
+  background-color: var(--backgroundcolorDark);
+}
+
 /*header color*/
-.py-5.text-center.container .row.py-lg-5 .col-lg-6.col-md-8.mx-auto.my-4 .heading{
+.py-5.text-center.container .row.py-lg-5 .col-lg-6.col-md-8.mx-auto.my-4 .heading , .text-center.container .row.py-lg-5 .col-lg-6.col-md-8.mx-auto .heading{
   color:var(--headercolor);
   font-weight: var(--fontWeightBold);
 }
@@ -100,9 +101,9 @@
   font-weight: var(--fontWeightSemiBold);
 }
 
-/*carousel styling*/
-.carousel-item {
-    height: 80vh;
+/*carousel styling kidos*/
+#carousel-kidos > .carousel-inner > .carousel-item {
+    height: 70vh;
     min-height: 350px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -110,6 +111,19 @@
     -o-background-size: cover;
     background-size: cover;
   }
+
+  /*carousel styling index*/
+#carousel-index > .carousel-inner > .carousel-item{
+  
+  height: 80vh; 
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: var(--backgroundcolorDark);
+}
 
   .carousel-caption{
     font-weight: var(--fontWeightSemiBold);
@@ -252,6 +266,13 @@
 .album.py-5.bg-light .row.row-cols-1.row-cols-sm-2.row-cols-md-3.g-3 .col .card.shadow-sm .bd-placeholder-img.card-img-top .artist-image{
   width: 102%;
   height: 102%;
+}
+.container.py-5.iquit-mp4{
+  height: 80vh;
+}
+
+.iquit-mp4{
+  background-color: var(--backgroundcolorDark);
 }
 
 /*#endregion BODY*/

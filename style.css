@@ -275,6 +275,47 @@
   background-color: var(--backgroundcolorDark);
 }
 
+/*#region PRICING*/
+#pricing-container{
+  background-color: var(--backgroundcolorDark);
+}
+
+.pricing-header .display-4{
+ color: var(--headercolor);
+ font-weight: var(--fontWeightBold);
+}
+
+.pricing-header .fs-5{
+color:var(--textcolorWhite);
+font-weight: var(--fontWeightSemiBold);
+}
+
+#pricing-cards-border{
+  border-color: var(--linkcolorHover);
+}
+
+#pricing-cards-border .card-header.py-3{
+  background-color:var(--headercolor);
+}
+
+#pricing-cards-border .card-body .w-100{
+  font-size:x-large;
+  background-color: white;
+  color: black;
+  border: 2px solid var(--headercolor);
+  border-radius: 4px;
+}
+#pricing-cards-border .card-body .w-100:hover{
+  background-color: var(--linkcolorHover);
+}
+
+.display-6.text-center.mb-4{
+  color: var(--headercolor);
+  font-weight: var(--fontWeightBold);
+}
+
+/*#endregion PRICING*/
+
 /*#endregion BODY*/
 
 /*#region FOOTER*/
@@ -390,7 +431,7 @@
   margin-bottom: 100px;
   margin-left: 100px;
   text-align: center;
-  color:#db5c36; }
+  color:var(--headercolor); }
   .section-heading p {
     color: #000;
     font-size: 14px;
@@ -545,11 +586,13 @@
 
 .card{
   border-radius: 4px;
-  background: #7372726d;
   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
   padding: 18px 40px 18px 36px;
   cursor: pointer;
+}
+#cardAboutColor{
+background: #7372726d;
 }
         
   .card:hover{

@@ -59,23 +59,16 @@
         aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carousel-index" data-bs-slide-to="1"
         aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carousel-index" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active" style="background-image: url('/pexels-mwabonje-1460037.jpg')">
+      <div class="slide1 carousel-item active" style="background-image: url('/pexels-mwabonje-1460037.jpg')">
         <div class="carousel-caption">
           <p>news 1</p>
         </div>
       </div>
-      <div class="carousel-item" style="background-image: url('/pexels-benjamin-lehman-1436141.jpg')">
+      <div class="slide2 carousel-item" style="background-image: url('/pexels-benjamin-lehman-1436141.jpg')">
         <div class="carousel-caption">
           <p>news 2</p>
-        </div>
-      </div>
-      <div class="carousel-item" style="background-image: url('/pexels-hendrik-b-744318.jpg')">
-        <div class="carousel-caption">
-          <p>news 3</p>
         </div>
       </div>
     </div>
@@ -113,12 +106,12 @@
 <section class="featured-artist-area section-padding-100 bg-img bg-overlay bg-fixed">
   <div class="container">
       <div class="row align-items-end">
-          <div class="col-12 col-md-5 col-lg-4">
+          <div class="col">
               <div>
                   <img class="img-kidos" src="/kidos.png" alt="">
               </div>
           </div>
-          <div class="col-12 col-md-7 col-lg-8">
+          <div class="col">
               <div class="featured-artist-content">
                   <!-- Section Heading -->
                   <div class="section-heading">
@@ -239,6 +232,20 @@
         navEl.classList.remove('navbar-scrolled');
       }
     });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      let slide1 = document.querySelector('.slide1');
+      let slide2 = document.querySelector('.slide2');
+
+      slide1.addEventListener('click', () => {
+        window.location.href = `${window.location.origin}/news1.html`;
+      })
+
+      slide2.addEventListener('click', () => {
+        window.location.href = `${window.location.origin}/news2.html`;
+      })
+    })
+
   </script>
   <script src="fadeIn.js"></script>
 </body>

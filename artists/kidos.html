@@ -48,6 +48,7 @@
     </div>
 </nav>
 
+<!--
 <header class="header">
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
@@ -61,11 +62,25 @@
       </div>
     </div>
   </section>
-  </header>
+  </header>-->
 
 <!--page content-->
 <body>
-  <div id="scroll-target">
+  <!-- Breadcumb Area Start -->
+  <section class="breadcumb-area bg-img bg-overlay" style="background-image: url('/kidos.png');">
+    <div class="bradcumbContent">
+        <h2 style="margin-bottom: 10px;">KID OS</h2>
+        <p class="lead">KID OS ist ein junger R&B Rapper.<br> Er thematisiert in seinen Songs alltägliche, aber auch gesellschaftskritische Themen. </p>
+        <p>
+        <p>
+          <a href="/artists/songs/iquit.html" class="btn btn-primary my-2">Quit - Musikvideo</a>
+          <a href="#scroll-target" class="btn btn-secondary my-2">Andere Projekte</a>
+          <a href="https://www.instagram.com/kidos4sho/" class="btn btn-secondary my-2">Instagram</a>
+        </p>
+    </div>
+  </section>
+
+  <div id="scroll-target" class="section-padding-100">
     <div id="carousel-kidos" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carousel-kidos" data-bs-slide-to="0" class="active"
@@ -76,11 +91,11 @@
           aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active" style="background-image: url('/kidos.png')">
+        <div class="slide1 carousel-item active" style="background-image: url('/PhotosSet/kidos1.png')">
         </div>
-        <div class="carousel-item" style="background-image: url('/PhotosSet/kidos-rappt.jpeg')">
+        <div class="slide2 carousel-item" style="background-image: url('/PhotosSet/kidos2.png')">
         </div>
-        <div class="carousel-item" style="background-image: url('/PhotosSet/kidos-stuhl.jpeg')">
+        <div class="slide3 carousel-item" style="background-image: url('/PhotosSet/kidos3.png')">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carousel-kidos" data-bs-slide="prev">
@@ -92,7 +107,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-  </div>
+  </div> 
     
 
 <!-- Navbar Animation Adding Scroll-->
@@ -106,7 +121,27 @@
                 navEl.classList.remove('navbar-scrolled');
             }
         });
+
+      window.addEventListener('DOMContentLoaded', () => {
+      let slide1 = document.querySelector('.slide1');
+      let slide2 = document.querySelector('.slide2');
+      let slide3 = document.querySelector('.slide3');
+
+      slide1.addEventListener('click', () => {
+        window.open('https://www.youtube.com/watch?v=8cBsleaHaXo');
+      })
+
+      slide2.addEventListener('click', () => {
+        window.open('https://www.youtube.com/watch?v=tdyo3-Hg5-o');
+      })
+
+      slide3.addEventListener('click', () => {
+        window.open('https://www.youtube.com/watch?v=f5wNT2Jmk5g');
+        
+      })
+    })
     </script>
+    
 </body>
 
 <!-- Footer -->
@@ -121,6 +156,4 @@
     <small class="text-white-50">&copy; Copyright by Super Awesome Engineers. All rights reserved.</small>
     </div>
 </footer>
-
-
 </html>
